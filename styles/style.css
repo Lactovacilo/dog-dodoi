@@ -1,0 +1,168 @@
+:root{
+    --cor-rosa: #EA1C81;
+    --cor-topo: #D8F1FB82;
+    --cor-preta: #000;
+    --cor-branca: #ffffff;
+    --cor-fundo: #FAFBFF;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    transition: 0.3s;
+}
+
+#header,
+main #banner button,
+#header nav a:hover,
+#bemVindo div,
+main #beneficios #beneficios-nossosBeneficios,
+main #beneficios #beneficios-nossosBeneficios h3,
+main #beneficios #beneficios-servicos,
+#footer,
+main #form #form-texto p,
+main #form #form-formulario form input{
+    padding: 15px;
+}
+
+#header{
+    background-color:var(--cor-topo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 70px;
+}
+
+#header nav a{
+    text-decoration: none;
+    color: var(--cor-preta);
+    border-radius: 20px;
+}
+
+#header nav a:hover{
+    background-color: var(--cor-rosa);
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--cor-branca);
+}
+
+.marginLateral{
+    margin: 0px 20px;
+}
+
+main #banner{
+    background-image: url("../img/Catchoro.png");
+    height: calc(100vh - 89px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--cor-rosa);
+}
+
+main #banner h1{
+    margin-top: 15vh;
+    color: var(--cor-rosa);
+    font-size: 2em;
+}
+
+main #banner p{
+    margin: 20px 0px;
+}
+
+main #banner button{
+    background-color: var(--cor-rosa);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 50px;
+}
+
+main #banner button:hover{
+    cursor:pointer;
+    padding: 18px;
+}
+
+main #bemVindo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 80px 150px;
+}
+
+main #bemVindo #bemVindo-boasVindas h3{
+    color: var(--cor-rosa);
+    margin-bottom: 10px;
+}
+
+main #beneficios{
+    background-color: var(--cor-fundo);
+}
+
+main #beneficios #beneficios-nossosBeneficios{
+    text-align: center;
+    color: var(--cor-rosa);
+}
+
+main #beneficios #beneficios-nossosBeneficios h3{
+    color: var(--cor-rosa);
+    font-size: 1.6em;
+}
+
+main #beneficios #beneficios-servicos{
+    color: var(--cor-rosa);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+main #form{
+    text-align: center;
+}
+
+main #form form{
+    padding: 40px;
+    width: 380px;
+    margin: 0 auto ;
+    text-align: left;
+}
+
+main #form #form-texto{
+    padding: 40px;
+}
+
+main #form #form-formulario{
+    background-image: url(../img/DForm/cao.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main #form #form-formulario form input{
+    border:none;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    width: 380px;
+    box-shadow: 0px 5px 5px gray;
+}
+
+main #form #form-formulario form button{
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-rosa);
+    border-radius: 50px;
+    width: 380px;
+    cursor: pointer;
+    color: var(--cor-branca);
+}
+
+#footer{
+    background-color: var(--cor-topo);
+    text-align: center;
+    background-image: url(../img/EFooter/Whats.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
