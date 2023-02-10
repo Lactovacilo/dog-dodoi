@@ -22,7 +22,10 @@ main #beneficios #beneficios-nossosBeneficios h3,
 main #beneficios #beneficios-servicos,
 #footer,
 main #form #form-texto p,
-main #form #form-formulario form input{
+main #form #form-formulario form input,
+main #form #form-formulario form button,
+main #form #form-login form input,
+main #form #form-login form button{
     padding: 15px;
 }
 
@@ -139,7 +142,8 @@ main #form #form-formulario{
     background-size: contain;
 }
 
-main #form #form-formulario form input{
+main #form #form-formulario form input,
+main #form #form-login form input{
     border:none;
     border-radius: 50px;
     margin-bottom: 10px;
@@ -147,12 +151,12 @@ main #form #form-formulario form input{
     box-shadow: 0px 5px 5px gray;
 }
 
-main #form #form-formulario form button{
-    padding: 8px;
+main #form #form-formulario form button,
+main #form #form-login form button{
     border: none;
     background-color: var(--cor-rosa);
     border-radius: 50px;
-    width: 380px;
+    width: 410px;
     cursor: pointer;
     color: var(--cor-branca);
 }
